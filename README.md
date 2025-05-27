@@ -4,9 +4,9 @@
 
 호스트 서버에서 
 ```
-docker build -f <YOUR_PATH>/morph/dockerfile -t morph .
+git clone https://github.com/chogamy/morph.git
 
-docker run -d -p <YOUR_PORT>:<YOUR_PORT> --name morph morph
+cd morph
 
-rm -r -f <YOUR_PATH>/morph
+docker compose up -d
 ```
